@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#292050"/>
+      <stop offset="1" stop-color="#0e1020"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d5ff71"/>
+      <stop offset="1" stop-color="#72e4b7"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="460" fill="url(#bg)"/>
+  <circle cx="485" cy="104" r="122" fill="#9875ff" opacity=".15"/>
+  <path d="M0 355 135 252l88 62 110-142 110 133 81-71 116 94v132H0Z" fill="#7e65cf" opacity=".23"/>
+  <path d="M0 396 115 308l102 54 108-119 99 107 97-67 119 82v95H0Z" fill="#111323" opacity=".85"/>
+  <g transform="translate(207 114) rotate(-5 112 112)">
+    <rect x="7" y="12" width="218" height="218" rx="34" fill="#0b0c14" stroke="#fff" stroke-opacity=".22" stroke-width="4"/>
+    <path d="M53 73h45v45h-45zM143 73h45v45h-45zM53 146h45v45h-45zM143 146h45v45h-45z" fill="url(#tile)" stroke="#efffc9" stroke-width="5"/>
+    <path d="m97 88 17-17 17 17v25h-34zM137 160l17-17 17 17v25h-34z" fill="#343050"/>
+  </g>
+  <text x="320" y="398" fill="#f3f0ff" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="3" text-anchor="middle">GEOMETRY DASH LITE</text>
+</svg>

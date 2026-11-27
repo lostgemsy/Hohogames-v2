@@ -1,5 +1,19 @@
-## Selenite
-The better unblocked games website.
+# Hohogames V2
+
+A dark, searchable arcade for the games included in this repository.
+
+## Run locally
+
+Install dependencies with `npm install`, then start the site with:
+
+```sh
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000). The game library is also
+available at [http://localhost:3000/games/](http://localhost:3000/games/).
+Game files remain in their original folders so their assets and runtime paths
+continue to work.
 ## Deploy to a cloud service
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/new/template?template=https://github.com/selenite-cc/selenite)
 [![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/selenite-cc/selenite)

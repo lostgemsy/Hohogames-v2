@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#09090b" />
+    <meta
+      name="description"
+      content="Explore the Hohogames V2 arcade: hundreds of games, ready to play."
+    />
+    <title>Hohogames V2 — Play something good</title>
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/games/style.css" />
+    <script src="/games/games.js" defer></script>
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <a class="brand" href="/games/" aria-label="Hohogames V2 home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span class="brand-name">hoho<span>games</span><small>V2</small></span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#library">Explore</a>
+        <button class="nav-link" type="button" data-filter="favorites">Favorites</button>
+        <button class="nav-play" type="button" data-random>Surprise me <span aria-hidden="true">↗</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> YOUR NEXT GAME IS RIGHT HERE</div>
+          <h1 id="hero-title">A little play<br />goes a <span>long way.</span></h1>
+          <p>Pick a favorite, find something new, and jump straight into the fun.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#library">Explore the games <span aria-hidden="true">↓</span></a>
+            <button class="button button-quiet" type="button" data-random><span aria-hidden="true">✳</span> Pick for me</button>
+          </div>
+          <div class="hero-stats" aria-label="Library highlights">
+            <div><strong id="game-count">—</strong><span>games to explore</span></div>
+            <i aria-hidden="true"></i>
+            <div><strong>One click</strong><span>to start playing</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Featured games">
+          <div class="art-glow"></div>
+          <div class="showcase-label"><span>THE ARCADE</span><span class="showcase-spark" aria-hidden="true">✦</span></div>
+          <div class="showcase-collage" id="showcase-collage" aria-hidden="true"></div>
+          <div class="showcase-caption"><span class="showcase-caption-mark">✳</span><span><strong>Good games. Good times.</strong><small>Find your next favorite</small></span><span class="caption-arrow" aria-hidden="true">↗</span></div>
+        </div>
+      </section>
+
+      <section class="library" id="library" aria-labelledby="library-title">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow section-eyebrow">THE GOOD STUFF</div>
+            <h2 id="library-title">Explore the arcade<span>.</span></h2>
+            <p class="section-subtitle">A whole lot of fun, all in one place.</p>
+          </div>
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.2 4.2"></path></svg>
+            <input id="game-search" type="search" placeholder="Find a game..." autocomplete="off" aria-label="Search games" />
+            <kbd>/</kbd>
+          </label>
+        </div>
+
+        <div class="library-toolbar">
+          <div class="filter-tabs" role="group" aria-label="Filter games">
+            <button class="filter-tab active" type="button" data-filter="all">All games <span id="all-count">—</span></button>
+            <button class="filter-tab" type="button" data-filter="featured">Featured</button>
+            <button class="filter-tab" type="button" data-filter="favorites">My favorites <span id="favorite-count">0</span></button>
+          </div>
+          <span class="results-count" id="results-count" aria-live="polite"></span>
+        </div>
+
+        <div class="game-grid" id="game-grid" aria-live="polite">
+          <div class="loading-state"><span class="loading-spinner"></span> Loading the arcade…</div>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">◌</span>
+          <h3>No games found</h3>
+          <p>Try a different search or switch to another collection.</p>
+          <button class="button button-quiet" type="button" data-filter="all">Show all games</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="/games/"><span class="brand-mark" aria-hidden="true">H</span><span class="brand-name">hoho<span>games</span><small>V2</small></span></a>
+      <p>Made for your next little break.</p>
+      <a class="back-top" href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
